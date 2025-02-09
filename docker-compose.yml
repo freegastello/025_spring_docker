@@ -5,10 +5,10 @@ services:
     image: postgres
     restart: always
     environment:
-      - POSTGRESS_USER=postgres
-      - POSTGRESS_PASSWORD=Kolbasa2489
-      - POSTGRESS_DB=demo_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Kolbasa2489
+      - POSTGRES_DB=demo_db
     volumes:
       - pg_demo:/var/lib/postgresql/data
     ports:
-      - "127.0.0.1:5433:5432"
+      - "127.0.0.1:5432:5432"
