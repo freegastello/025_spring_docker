@@ -1,4 +1,3 @@
-version: '3.1'
 volumes:
   pg_demo:
 services:
@@ -6,8 +5,8 @@ services:
     image: postgres
     restart: always
     environment:
-      - POSTGRESS_USER=admin
-      - POSTGRESS_PASSWORD=admin
+      - POSTGRESS_USER=postgres
+      - POSTGRESS_PASSWORD=Kolbasa2489
       - POSTGRESS_DB=demo_db
     volumes:
       - pg_demo:/var/lib/postgresql/data
